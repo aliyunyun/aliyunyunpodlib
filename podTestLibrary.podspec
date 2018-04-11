@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'podTestLibrary'
   s.version          = '0.1.0'
   s.summary          = 'is a test project'
+  s.ios.deployment_target = '8.0'
   s.description      = <<-DESC
                       testing private podspec.
                       DESC
@@ -18,16 +19,11 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/aliyunyun/aliyunyunpodlib'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'aliyunyun' => '979239730@qq.com' }
-  s.source           = { :git => 'https://github.com/aliyunyun/aliyunyunpodlib.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/aliyunyun/aliyunyunpodlib.git', :tag => '0.1.0' }
 
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'Pod/Classes/**/*'
-  
-
-
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.source_files = 'Pod/Classes/*.{h,m,swift}'
+  s.public_header_files = 'Pod/Classes/*.h'
   s.frameworks = 'UIKit'
 
 end
